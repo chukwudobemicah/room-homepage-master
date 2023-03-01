@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 const hamburgerMenu = document.querySelector('.header__hamburger-div');
 const nav = document.querySelector('nav');
 const navCancel = document.querySelector('.nav--cancel');
@@ -8,18 +10,18 @@ const slidersBtnContainer = document.querySelector(
   '.swiper_wrapper--button-navigators'
 );
 console.log(slidersBtnContainer);
-const anim = function (sn) {
-  sn.style.animation = 'slide-out 2s ease forwards';
+const shopNowAnimation = function (sn) {
+  sn.style.animation = 'slide-out 1.5s ease forwards';
   setTimeout(function () {
-    sn.style.animation = 'slide-in 2s ease forwards';
-  }, 2000);
+    sn.style.animation = 'slide-in 1.5s ease forwards';
+  }, 1000);
 };
 
 shopNow.forEach(sn => {
   sn.addEventListener('animationend', function () {
     sn.style.animation = '';
     sn.style.animation = 'slide-in 2s ease forwards';
-    anim(sn);
+    shopNowAnimation(sn);
   });
 });
 
@@ -48,3 +50,15 @@ if (window.matchMedia('(max-width:700px)').matches) {
   const absoluteHeight = pictureHeight - btnContainersHeight;
   slidersBtnContainer.style.top = `${absoluteHeight}px`;
 }
+const text = new SplitType('.section-2__paragraph p:nth-child(1)');
+gsap.to('.char', {
+  y: 0,
+  stagger: 0.05,
+  delay: 0.2,
+  duration: 0.1,
+  scrollTrigger: {
+    trigger: '.char',
+    start: 'top 100%',
+    toggleActions: 'restart none none none',
+  },
+});

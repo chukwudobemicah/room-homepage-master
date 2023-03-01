@@ -605,4 +605,19 @@ header p {
     max-width: 70%;
   }
 }
+
+.char {
+  -webkit-transform: translateY(115px);
+          transform: translateY(115px);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.section-2__paragraph p:nth-child(1),
+.swiper-content__paragraph--header {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
 /*# sourceMappingURL=index.css.map */
