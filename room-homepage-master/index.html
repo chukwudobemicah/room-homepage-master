@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./scssfolder/index.css">
+  <title>Frontend Mentor | Room homepage</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header__hamburger-div">
+      <div class="header__hamburger-div--hamburger"></div>
+    </div>
+    <p>
+      <img src="images/logo.svg" alt="room-logo">
+    </p>
+    <nav class="nav translate-up">
+      <p><img class="nav--cancel" src="images/icon-close.svg" alt=""></p>
+      <ul>
+        <li>Home</li>
+        <li>Shop</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="slides">
+      <!-- Slider main container -->
+      <div class="swiper_wrapper--button-navigators">
+        <div class="button-prev"><button><img src="./images/icon-angle-left.svg" alt="angle-left"></button></div>
+        <div class="button-next"><button><img src="./images/icon-angle-right.svg" alt="angle-right"></button>
+        </div>
+      </div>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width:650px)" srcset="./images/mobile-image-hero-1.jpg">
+              <source media="(min-width:650px)" srcset="./images/desktop-image-hero-1.jpg">
+              <img src="./images/mobile-image-hero-1.jpg" alt="">
+            </picture>
+            <div class="swiper-content">
+              <div class="swiper-content__paragraph">
+                <p class="swiper-content__paragraph--header">
+                  Discover innovative ways to decorate
+                </p>
+                <p>
+                  We provide unmatched quality, comfort, and style for property owners across the country.
+                  Our experts combine form and function in bringing your vision to life. Create a room in your
+                  own style with our collection and make your property a reflection of you and what you love.
+                </p>
+                <p class="swiper-content__paragraph__shopnow">
+                  <a target="_blank" href="https://twitter.com/ChukwudobeMicah?t=B0tqHxgwRXjjiQA542dRkg&s=09">Shop now
+                    <img class="arrow" src="./images/icon-arrow.svg" alt=""></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width:650px)" srcset="./images/mobile-image-hero-2.jpg">
+              <source media="(min-width:650px)" srcset="./images/desktop-image-hero-2.jpg">
+              <img src="./images/mobile-image-hero-2.jpg" alt="">
+            </picture>
+            <div class="swiper-content">
+              <div class="swiper-content__paragraph">
+                <p class="swiper-content__paragraph--header">We are available all across the globe</p>
+                <p>
+                  With stores all over the world, it's easy for you to find furniture for your home or place of
+                  business.
+                  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
+                  store locator. Any questions? Don't hesitate to contact us today. </p>
+                <p class="swiper-content__paragraph__shopnow">
+                  <a target="_blank" href="https://twitter.com/ChukwudobeMicah?t=B0tqHxgwRXjjiQA542dRkg&s=09">Shop now
+                    <img class="arrow" src="./images/icon-arrow.svg" alt=""></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source media="(max-width:650px)" srcset="./images/mobile-image-hero-3.jpg">
+              <source media="(min-width:650px)" srcset="./images/desktop-image-hero-3.jpg">
+              <img src="./images/mobile-image-hero-3.jpg" alt="">
+            </picture>
+            <div class="swiper-content">
+              <div class="swiper-content__paragraph">
+                <p class="swiper-content__paragraph--header">Manufactured with the best materials</p>
+                <p>
+                  Our modern furniture store provide a high level of quality. Our company has invested in advanced
+                  technology
+                  to ensure that every product is made as perfect and as consistent as possible. With three decades of
+                  experience in this industry, we understand what customers want for their home and office.
+                </p>
+                <p class="swiper-content__paragraph__shopnow">
+                  <a target="_blank" target="_blank"
+                    href="https://twitter.com/ChukwudobeMicah?t=B0tqHxgwRXjjiQA542dRkg&s=09">Shop now
+                    <img class="arrow" src="./images/icon-arrow.svg" alt=""></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-2">
+      <img src="./images/image-about-dark.jpg" alt="">
+      <div class="section-2__paragraph">
+        <p class="section-2__paragraph--header">
+          About our furniture
+        </p>
+        <p>
+          Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+      </div>
+      <img src="./images/image-about-light.jpg" alt="">
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="swiper.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
