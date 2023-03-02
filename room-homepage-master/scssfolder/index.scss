@@ -269,6 +269,14 @@ header nav {
   transform: translateY(-25rem);
   transition: transform 0.25s ease;
 }
+.scale-up {
+  transform: translateY(toRem(-5px));
+  transition: transform 0.25s ease;
+}
+.scale-down {
+  transform: translateY(0);
+  transition: transform 0.25s ease;
+}
 .translate-down {
   transform: translateY(0);
   transition: transform 0.25s ease;

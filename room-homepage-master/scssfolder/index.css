@@ -339,6 +339,24 @@ header nav img {
   transition: transform 0.25s ease, -webkit-transform 0.25s ease;
 }
 
+.scale-up {
+  -webkit-transform: translateY(-0.3125rem);
+          transform: translateY(-0.3125rem);
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+}
+
+.scale-down {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+}
+
 .translate-down {
   -webkit-transform: translateY(0);
           transform: translateY(0);
